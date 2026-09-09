@@ -1,5 +1,9 @@
-# cs210-assignment02
+# CS210 Assignment02
 Binary Search and Recursive Analysis
+
+_Author: Matthew Woo_
+
+_Date:_
 
 ## Required implementation
 1. Implement an iterative binary search.
