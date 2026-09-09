@@ -1,4 +1,5 @@
 # cs210-assignment02
+Binary Search and Recursive Analysis
 
 ## Required implementation
 1. Implement an iterative binary search.
