@@ -19,7 +19,7 @@ _Date: Sep 12, 2026_
 
 ## Required implementation
 ### 1. Implement an iterative binary search.
-   ```
+   ```cpp
    int binarySearchIterative(vector<int> numbers, int numbersSize, int key, int& countI) {
       // Set the lowest index to 0 and the highest index to the size of numbers -1
       int low = 0;
@@ -50,7 +50,7 @@ _Date: Sep 12, 2026_
    }
    ```
 ### 2. Implement a recursive binary search.
-   ```
+   ```cpp
    int binarySearchRecursive(vector<int> numbers, int low, int high, int key, int& countR) {
       // If low larger than high, then return -1 as no solution
       // because to use bineary search numbers need to be sorted.
@@ -83,7 +83,7 @@ _Date: Sep 12, 2026_
    ```
    ```
 ### 6. Compare binary search to a linear search on the same data.
-   ```
+   ```cpp
    int linearSearch(vector<int> numbers, int key, int& countLinear) {
       for (int i = 0; i < numbers.size(); ++i) {
          // Set value to current number that are looking at
@@ -102,7 +102,7 @@ _Date: Sep 12, 2026_
 
 ## Code
 [Woo_Matthew_Assignment02.cpp](https://github.com/matthewoo527/cs210-assignment02/blob/main/Woo_Matthew_Assignment02.cpp)
-```
+```cpp
 // AI Disclose
 /**I used ChatGPT to debug.
  * I found out that countR will not work in recursive because the function is calling itself 
