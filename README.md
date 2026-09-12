@@ -15,8 +15,8 @@ _Date: Sep 12, 2026_
  * They also point out that I should use int& instead of int for countR
  * so it would not only pass the copy of the value.
  */
-I asked AI how can I connect O(log n) to T(n).
 ```
+I also asked AI how can I connect O(log n) to T(n).
 
 ## Required implementation
 ### 1. Implement an iterative binary search.
