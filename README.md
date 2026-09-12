@@ -117,7 +117,7 @@ I also asked AI how can I connect O(log n) to T(n).
 ## Complexity discussion
 
 ## Code
-[Woo_Matthew_Assignment02.cpp](https://github.com/matthewoo527/cs210-assignment02/blob/main/Woo_Matthew_Assignment02.cpp)
+[Woo_Matthew_Assignment02.cpp](./Woo_Matthew_Assignment02.cpp)
 ```cpp
 // AI Disclose
 /**I used ChatGPT to debug.
