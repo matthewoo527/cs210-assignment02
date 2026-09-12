@@ -39,6 +39,28 @@ _Date: Sep 12, 2026_
    ```
 2. Implement a recursive binary search.
    ```
+   int binarySearchRecursive(vector<int> numbers, int low, int high, int key, int& countR) {
+      // If low larger than high, then return -1 as no solution
+      // because to use bineary search numbers need to be sorted.
+      if (low > high) {
+         return -1;
+      }
+   
+      //Defind mid index in numbers
+      int mid = (low + high) / 2;
+      // Count how many comparesion the function did
+      countR++;
+      // If key is larger than the value in mid index, then check the second half of numbers
+      if (numbers[mid] < key) {
+         return binarySearchRecursive(numbers, mid + 1, high, key, countR);
+      }
+      // else check the first half if the key is smaller than the value in mid index in numbers
+      else if (numbers[mid] > key) {
+         return binarySearchRecursive(numbers, low, mid - 1, key, countR);
+      }
+      // If the key is the mid value then return mid
+      return mid;
+   }
    ```
 3. Instrument both versions to count element comparisons.
    ```
