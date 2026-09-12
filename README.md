@@ -112,7 +112,8 @@ _Date: Sep 12, 2026_
    Linear search finds the key by looking at every element, and binary search looks for the key by looking at the middle value and determining which half it will look for, lower half and upper half. Binary search requires the list to be sorted.
 
    If the key is at the beginning, linear search is faster than binary search to find the index, but if the value is near the middle, binary search is faster. Also, in a larger list, binary search will be faster because it cuts the half of the list.
-   
+
+## Complexity discussion
 
 ## Code
 [Woo_Matthew_Assignment02.cpp](https://github.com/matthewoo527/cs210-assignment02/blob/main/Woo_Matthew_Assignment02.cpp)
