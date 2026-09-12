@@ -73,6 +73,20 @@ _Date: Sep 12, 2026_
    ```
 6. Compare binary search to a linear search on the same data.
    ```
+   int linearSearch(vector<int> numbers, int key, int& countLinear) {
+      for (int i = 0; i < numbers.size(); ++i) {
+         // Set value to current number that are looking at
+         int value = numbers[i];
+         // Count linear for each time the forloop statement run
+         countLinear++;
+         // if the value is the key that we want to find then return that index
+         if (value == key) {
+            return i;
+         }
+      }
+      // If nothing was found then return -1
+      return -1;
+   }
    ```
 
 ## Code
