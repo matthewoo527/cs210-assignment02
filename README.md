@@ -85,7 +85,7 @@ I also asked AI how can I connect O(log n) to T(n).
    
    `T(n/2)` is the time to search through half of the list after it cuts the list in half and only looks at that half part,
 
-   
+   `O(1)` is the complexity for checking if the value matches the key, calculate `mid`, etc.
 ### 6. Compare binary search to a linear search on the same data.
    __Linear Search:__
    ```cpp
