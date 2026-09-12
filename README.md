@@ -83,6 +83,7 @@ _Date: Sep 12, 2026_
    ```
    ```
 ### 6. Compare binary search to a linear search on the same data.
+   __Linear Search:__
    ```cpp
    int linearSearch(vector<int> numbers, int key, int& countLinear) {
       for (int i = 0; i < numbers.size(); ++i) {
@@ -99,6 +100,7 @@ _Date: Sep 12, 2026_
       return -1;
    }
    ```
+   `numbers = {2, 4, 7, 10, 11, 32, 45, 87}`
    | Search for key | Binary | Linear |
    | --- | --- | --- |
    | 2 | 3 | 1 |
@@ -107,9 +109,9 @@ _Date: Sep 12, 2026_
    | 1 | 3 | 8 |
    | 8 | 3 | 8 |
 
-   Linear search finds the key by looking at every element, and binary search looks for the key by looking at the middle value and determining which half it will look for, lower half and upper half.
+   Linear search finds the key by looking at every element, and binary search looks for the key by looking at the middle value and determining which half it will look for, lower half and upper half. Binary search requires the list to be sorted.
 
-   In the case where the key is at the beginning, linear search will be faster than binary search to find the index, but in the case where the value is near the middle, binary search will be faster.
+   If the key is at the beginning, linear search is faster than binary search to find the index, but if the value is near the middle, binary search is faster. Also, in a larger list, binary search will be faster because it cuts the half of the list.
    
 
 ## Code
