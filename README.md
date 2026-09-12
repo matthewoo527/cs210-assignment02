@@ -76,13 +76,16 @@ I also asked AI how can I connect O(log n) to T(n).
    }
    ```
 ### 3. Instrument both versions to count element comparisons.
-   `countI` in binarySearchIterative and `countR` in binearySearchRecursive count element comparisons.
+   `countI` in binarySearchIterative and `countR` in binarySearchRecursive count element comparisons.
 ### 4. Test at least five searches, including: first element, last element, middle element, missing value below the range, and missing value inside the range.
 
    [Output](#output)
 ### 5. For the recursive version, write and explain the recurrence T(n) = T(n/2) + O(1) and connect it to O(log n).
-   ```
-   ```
+   `T(n)` is the time to search through `n` elements,
+   
+   `T(n/2)` is the time to search through half of the list after it cuts the list in half and only looks at that half part,
+
+   
 ### 6. Compare binary search to a linear search on the same data.
    __Linear Search:__
    ```cpp
