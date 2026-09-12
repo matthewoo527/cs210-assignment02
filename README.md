@@ -114,6 +114,7 @@ _Date: Sep 12, 2026_
  */
 
 #include <iostream>
+#include <vector>
 using namespace std;
 
 int binarySearchIterative(vector<int> numbers, int numbersSize, int key, int& countI) {
