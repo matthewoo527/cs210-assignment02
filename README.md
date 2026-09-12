@@ -7,11 +7,51 @@ _Date: Sep 12, 2026_
 
 ## Required implementation
 1. Implement an iterative binary search.
+   ```
+   int binarySearchIterative(vector<int> numbers, int numbersSize, int key, int& countI) {
+      // Set the lowest index to 0 and the highest index to the size of numbers -1
+      int low = 0;
+      int high = numbersSize - 1;
+   
+      // While high is larger than or equal to low
+      while (high >= low) {
+         // Count comparsions for binearySearchIterative
+         countI++;
+         // Define mid index
+         int mid = (high + low) / 2;
+         // if key is larger then the numbers in the middle then set low to mid+1 to 
+         // look at the last half of the numbers
+         if (numbers[mid] < key) {
+            low = mid + 1;
+         }
+         // else look at the first half by setting the high value to mid-1
+         else if (numbers[mid] > key) {
+            high = mid - 1;
+         }
+         // else the key is in the middle so return mid index
+         else {
+            return mid;
+         }
+      }
+   
+      return -1; // not found
+   }
+   ```
 2. Implement a recursive binary search.
+   ```
+   ```
 3. Instrument both versions to count element comparisons.
+   ```
+   ```
 4. Test at least five searches, including: first element, last element, middle element, missing value below the range, and missing value inside the range.
+   ```
+   ```
 5. For the recursive version, write and explain the recurrence T(n) = T(n/2) + O(1) and connect it to O(log n).
+   ```
+   ```
 6. Compare binary search to a linear search on the same data.
+   ```
+   ```
 
 ## Code
 [Woo_Matthew_Assignment02.cpp](https://github.com/matthewoo527/cs210-assignment02/blob/main/Woo_Matthew_Assignment02.cpp)
