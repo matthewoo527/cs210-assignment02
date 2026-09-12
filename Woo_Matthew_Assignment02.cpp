@@ -181,7 +181,7 @@ int main() {
    testLinear(numbers, key3);
    cout << "\n";
 
-   cout << "===Test Case 5, missing value above the range===\n" << endl;
+   cout << "===Test Case 5, missing value inside the range===\n" << endl;
    int key4 = 8;
    cout << "Key5: " << key4 << "\n";
    testIterative(numbers, key4);
