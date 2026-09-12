@@ -3,7 +3,7 @@ Binary Search and Recursive Analysis
 
 _Author: Matthew Woo_
 
-_Date:_
+_Date: Sep 12, 2026_
 
 ## Required implementation
 1. Implement an iterative binary search.
@@ -14,6 +14,7 @@ _Date:_
 6. Compare binary search to a linear search on the same data.
 
 ## Code
+[Woo_Matthew_Assignment02.cpp](https://github.com/matthewoo527/cs210-assignment02/blob/main/Woo_Matthew_Assignment02.cpp)
 ```
 // AI Disclose
 /**I used ChatGPT to debug.
