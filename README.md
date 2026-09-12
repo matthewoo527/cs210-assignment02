@@ -86,6 +86,17 @@ I also asked AI how can I connect O(log n) to T(n).
    `T(n/2)` is the time to search through half of the list after it cuts the list in half and only looks at that half part,
 
    `O(1)` is the complexity for checking if the value matches the key, calculate `mid`, etc.
+
+   In this case, we have 8 elements. If we keep cutting it in half, it will need 3 steps to get to 1 element.
+   
+   $`n = 8`$
+   
+   | n/2  | Remaining Size  | Power Form  |
+   | --- | --- | --- |
+   | 8/2 = 4 | == n/2 | == $`n/2^1`$ |
+   | 4/2 = 2 | == n/4 | == $`n/2^2`$ |
+   |2/2 = 1 | == n/8 | == $`n/2^3`$ |
+   
 ### 6. Compare binary search to a linear search on the same data.
    __Linear Search:__
    ```cpp
@@ -113,7 +124,7 @@ I also asked AI how can I connect O(log n) to T(n).
    | 1 | 3 | 8 |
    | 8 | 3 | 8 |
 
-   Linear search finds the key by looking at every element, and binary search looks for the key by looking at the middle value and determining which half it will look for, lower half and upper half. Binary search requires the list to be sorted.
+   Linear search finds the key by looking at every element, and binary search looks for the key by looking at the middle value and determining which half it will look in: the lower half or the upper half. Binary search requires the list to be sorted.
 
    If the key is at the beginning, linear search is faster than binary search to find the index, but if the value is near the middle, binary search is faster. Also, in a larger list, binary search will be faster because it cuts the half of the list.
 
