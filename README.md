@@ -99,6 +99,18 @@ _Date: Sep 12, 2026_
       return -1;
    }
    ```
+   | Search for key | Binary | Linear |
+   | --- | --- | --- |
+   | 2 | 3 | 1 |
+   | 87 | 4 | 8 |
+   | 10 | 1 | 4 |
+   | 1 | 3 | 8 |
+   | 8 | 3 | 8 |
+
+   Linear search finds the key by looking at every element, and binary search looks for the key by looking at the middle value and determining which half it will look for, lower half and upper half.
+
+   In the case where the key is at the beginning, linear search will be faster than binary search to find the index, but in the case where the value is near the middle, binary search will be faster.
+   
 
 ## Code
 [Woo_Matthew_Assignment02.cpp](https://github.com/matthewoo527/cs210-assignment02/blob/main/Woo_Matthew_Assignment02.cpp)
