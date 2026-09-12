@@ -75,7 +75,7 @@ _Date: Sep 12, 2026_
    }
    ```
 ### 3. Instrument both versions to count element comparisons.
-   countI in binarySearchIterative and countR in binearySearchRecursive count element comparisons.
+   `countI` in binarySearchIterative and `countR` in binearySearchRecursive count element comparisons.
 ### 4. Test at least five searches, including: first element, last element, middle element, missing value below the range, and missing value inside the range.
 
    [Output](https://github.com/matthewoo527/cs210-assignment02/blob/main/README.md#output)
