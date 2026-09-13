@@ -137,6 +137,13 @@ I also asked AI how can I connect O(log n) to T(n).
 | Iterative Binary Search | O(log n) | O(1) |
 |Recursive Binary Search | O(log n) | O(log n) |
 |Linear Search | O(n) | O(1) |
+
+For Iterative binary search, the time complexity is O(log n) because the time it takes is O(log n) steps, and space complexity is O(1) because it doesn't create anything or make the vector grow.
+
+For Recursive binary search, the time complexity is O(log n) because the time it takes is O(log n) steps, the space complexity is also O(log n) because it need to remember every steps for the recursive function, so it is depends on how many steps it takes.
+
+For linear search, the time complexity is O(n) because it goes through n elements, every elements in the list, the space complexity is O(1) because it doesn't create anything, it just "messing" around with the same list.
+
 ## Code
 [Woo_Matthew_Assignment02.cpp](./Woo_Matthew_Assignment02.cpp)
 ```cpp
