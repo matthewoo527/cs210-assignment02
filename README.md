@@ -132,7 +132,11 @@ I also asked AI how can I connect O(log n) to T(n).
    If the key is at the beginning, linear search is faster than binary search to find the index, but if the value is near the middle, binary search is faster. Also, in a larger list, binary search will be faster because it cuts the half of the list.
 
 ## Complexity discussion
-
+| Search Method | Time Complexity| Space Complexity|
+| --- | --- | --- |
+| Iterative Binary Search | O(log n) | O(1) |
+|Recursive Binary Search | O(log n) | O(log n) |
+|Linear Search | O(n) | O(1) |
 ## Code
 [Woo_Matthew_Assignment02.cpp](./Woo_Matthew_Assignment02.cpp)
 ```cpp
