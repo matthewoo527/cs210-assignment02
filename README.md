@@ -93,10 +93,11 @@ I also asked AI how can I connect O(log n) to T(n).
    
    | n/2  | Remaining Size  | Power Form  |
    | --- | --- | --- |
-   | 8/2 = 4 | == n/2 | == $`n/2^1`$ |
-   | 4/2 = 2 | == n/4 | == $`n/2^2`$ |
-   |2/2 = 1 | == n/8 | == $`n/2^3`$ |
-   
+   | 8/2 = 4 | == n/2 | == $n/2^1$ |
+   | 4/2 = 2 | == n/4 | == $n/2^2$ |
+   |2/2 = 1 | == n/8 | == $n/2^3$ |
+
+   It takes $\log_2(8) = 3$
 ### 6. Compare binary search to a linear search on the same data.
    __Linear Search:__
    ```cpp
