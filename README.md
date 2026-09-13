@@ -131,6 +131,12 @@ I also asked AI how can I connect O(log n) to T(n).
 
    If the key is at the beginning, linear search is faster than binary search to find the index, but if the value is near the middle, binary search is faster. Also, in a larger list, binary search will be faster because it cuts the half of the list.
 
+## Design Decision
+
+There are 6 function, binarySearchIterative, binarySearchRecursive, linearSearch, and 3 test functions for those search method.
+
+It only used a list of numbers and 5 test cases, including: first element, last element, middle element, missing value below the range, and missing value inside the range.
+
 ## Complexity discussion
 | Search Method | Time Complexity| Space Complexity|
 | --- | --- | --- |
